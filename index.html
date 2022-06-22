@@ -24,6 +24,7 @@
   </head>
   <body>
     <audio src="assets/click_tone.mp3" class="hidden" id="audio"></audio>
+
     <!-- Introductory Section -->
     <section class="s1">
       <div class="main-container">
@@ -95,65 +96,80 @@
       </div>
     </section>
 
-    <section class="s2">
+    <!-- More about me section -->
+    <a name="aboutme"></a>
+    <section class="s1 gen-section">
       <div class="main-container">
         <div class="about-wrapper">
+          <div class="nav-wrapper">
+            <a href="index.html#aboutme" onclick="playTone()">
+              <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+              </div>
+            </a>
+
+            <ul id="navigation">
+              <li>
+                <a href="index.html#aboutme" onclick="playTone()">Terminal</a>
+              </li>
+            </ul>
+
+            <ul id="navigation">
+              <li>
+                <a href="index.html#contact" onclick="playTone()">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="terminal">
+            <p>Prakash@Ubuntu-2022 : ~$ sudo get more_info && get skill_set</p>
+            <p>getting details..</p>
+          </div>
+
           <div class="about-me">
             <h4>More about me</h4>
-
             <p>
-              I build new projects just to tickle my brain and love teaching
-              others how they're made.
+              Enthusiastic Learner who is always looking to apply the gained
+              knowledge to solve the problems or build things.
             </p>
+            <p>Inclination towards :</p>
+            <ul>
+              <li>Data Analytics</li>
+              <li>Machine Learning</li>
+              <li>Data Science</li>
+              <li>Software Development</li>
+            </ul>
+          </div>
 
+          <div class="skills-wrapper">
+            <h4>SKILLS</h4>
             <p>
-              While I keep busy teaching courses, I still take interviews in
-              search of a great team & projects that interest me.
+              Download my Resume here :
+              <a target="_blank" href="assets/resume.pdf">[Resume]</a>
             </p>
-
-            <hr />
-
-            <h4>TOP EXPERTISE</h4>
-
-            <p>
-              Fullstack developer with primary focus on Django + React:
-              <a target="_blank" href="resume.pdf">Download Resume</a>
-            </p>
-
             <div id="skills">
               <ul>
                 <li>Python</li>
-                <li>Django</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Postgres</li>
+                <li>ML</li>
+                <li>SQL</li>
+                <li>Data Viz.</li>
+                <li>C++</li>
               </ul>
-
               <ul>
-                <li>Google Maps API</li>
-                <li>JS Charts</li>
-                <li>AWS (RDS/S3)</li>
-                <li>Heroku</li>
-                <li>HTML/CSS</li>
+                <li>Data Analytics</li>
+                <li>R</li>
+                <li>DSA</li>
+                <li>JavaScript</li>
+                <li>HTML5 / CSS3</li>
               </ul>
             </div>
-          </div>
-
-          <div class="social-links">
-            <img id="social_img" src="assets/follow.jpg" />
-            <h3>Find me on Twitter & Youtube</h3>
-
-            <a target="_blank" href="https://www.youtube.com/c/dennisivy"
-              >YouTube: @DennisIvy</a
-            >
-            <br />
-            <a target="_blank" href="https://twitter.com/dennisivy11"
-              >Twitter: @DennisIvy11</a
-            >
           </div>
         </div>
       </div>
     </section>
+
     <!-- Projects Section -->
     <a name="projects"></a>
     <section class="s1 gen-section">
@@ -189,60 +205,66 @@
           <div class="main-container">
             <div class="post-wrapper">
               <div>
-                <div class="post">
-                  <img class="thumbnail" src="assets/sanskrit.jpg" />
-                  <div class="post-preview">
-                    <h6 class="post-title">
-                      PhotoOCR - Devanagari Script Recognition
-                    </h6>
-                    <p class="post-intro">
-                      Created and trained a multiclass classifier Neural Network
-                      that can classify the characters and digits of Devanagari
-                      Script.
-                    </p>
-                    <a href="post.html">Read More</a>
+                <a href="index.html">
+                  <div class="post">
+                    <img class="thumbnail" src="assets/sanskrit.jpg" />
+                    <div class="post-preview">
+                      <h6 class="post-title">
+                        PhotoOCR - Devanagari Script Recognition
+                      </h6>
+                      <p class="post-intro">
+                        Created and trained a multiclass classifier Neural
+                        Network that can classify the characters and digits of
+                        Devanagari Script.
+                      </p>
+                      <a href="index.html">Know More</a>
+                    </div>
                   </div>
-                </div>
+                </a>
+              </div>
+              <div>
+                <a href="index.html">
+                  <div class="post">
+                    <img class="thumbnail" src="assets/flappy_bird.jpg" />
+                    <div class="post-preview">
+                      <h6 class="post-title">
+                        Flappy Bird AI - A Genetic Algorithm application
+                      </h6>
+                      <p class="post-intro">
+                        Created flappy bird game and trained AI birds over
+                        generations using the built-in Genetic Algorithm in NEAT
+                        Framework.
+                      </p>
+                      <a href="index.html">Know More</a>
+                    </div>
+                  </div>
+                </a>
               </div>
 
               <div>
-                <div class="post">
-                  <img class="thumbnail" src="assets/flappy_bird.jpg" />
-                  <div class="post-preview">
-                    <h6 class="post-title">
-                      Flappy Bird AI - A Genetic Algorithm application
-                    </h6>
-                    <p class="post-intro">
-                      Created flappy bird game and trained AI birds over
-                      generations using the built-in Genetic Algorithm in NEAT
-                      Framework.
-                    </p>
-                    <a href="post.html">Read More</a>
+                <a href="index.html">
+                  <div class="post">
+                    <img class="thumbnail" src="assets/backtracking.png" />
+                    <div class="post-preview">
+                      <h6 class="post-title">
+                        BackTracking Algorithm Visualizer
+                      </h6>
+                      <p class="post-intro">
+                        Created a Static Web Application that can visualize the
+                        BackTracking Algorithm in action by generating and
+                        solving the Sudoku puzzle.
+                      </p>
+                      <a href="index.html">Know More</a>
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="post">
-                  <img class="thumbnail" src="assets/backtracking.png" />
-                  <div class="post-preview">
-                    <h6 class="post-title">
-                      BackTracking Algorithm Visualizer
-                    </h6>
-                    <p class="post-intro">
-                      Created a Static Web Application that can visualize the
-                      BackTracking Algorithm in action by generating and solving
-                      the Sudoku puzzle.
-                    </p>
-                    <a href="post.html">Read More</a>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Contact Section -->
     <a name="contact"></a>
     <section class="s1 gen-section">

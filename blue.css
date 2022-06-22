@@ -311,11 +311,26 @@ h6 {
 }
 
 .about-wrapper {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding-bottom: 50px;
-  padding-top: 50px;
-  gap: 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "nav-wrapper nav-wrapper"
+    "terminal terminal"
+    "about-me skills-wrapper";
+}
+
+.about-me {
+  display: grid;
+  margin: 2vw;
+  padding-top: 3vh;
 }
 
 #skills {
@@ -324,10 +339,12 @@ h6 {
   background-color: var(--previewShadow);
 }
 
-.social-links {
+.skills-wrapper {
   display: grid;
   align-content: center;
-  text-align: center;
+  margin: 2vw;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
 }
 
 #social_img {
@@ -348,6 +365,12 @@ h6 {
   -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
   box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
   margin-top: 20px;
+  cursor: pointer;
+}
+
+.post:hover {
+  box-shadow: -0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+  transition: box-shadow 0.5s ease-out;
 }
 
 .thumbnail {
@@ -431,6 +454,15 @@ h6 {
 
   .right-column {
     justify-content: center;
+  }
+
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav-wrapper"
+      "terminal"
+      "about-me"
+      "skills-wrapper";
   }
 }
 
