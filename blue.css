@@ -347,10 +347,6 @@ h6 {
   padding-bottom: 5vh;
 }
 
-#social_img {
-  width: 100%;
-}
-
 .post-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
