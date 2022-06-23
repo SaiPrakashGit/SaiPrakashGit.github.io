@@ -462,7 +462,7 @@ h6 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   #preview-shadow {
     max-width: 280px;
     height: 180px;
@@ -473,9 +473,6 @@ h6 {
   #preview {
     width: 280px;
   }
-  .know {
-    margin-right: 30%;
-  }
 }
 
 .gen-section {
@@ -483,13 +480,14 @@ h6 {
 }
 
 .know-live {
-  display: inline;
-  justify-content: space-between;
+  padding-bottom: 6.5%;
 }
+
 .know {
   display: inline;
-  margin-right: 48%;
+  float: left;
 }
 .live {
   display: inline;
+  float: right;
 }
