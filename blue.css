@@ -478,3 +478,15 @@ h6 {
 .gen-section {
   padding-top: 50px;
 }
+
+.know-live {
+  display: inline;
+  justify-content: space-between;
+}
+.know {
+  display: inline;
+  margin-right: 140px;
+}
+.live {
+  display: inline;
+}
